@@ -1,0 +1,21 @@
+Dependency Injection with Autofac - Udemy
+
+The following file is a list of notes taken from following the course `Dependency Injection in C# and .NET with the Autofac Library` on Udemy 
+(https://www.udemy.com/course/di-ioc-dotnet)
+
+Section 0: Introduction
+
+- In an Object Oriented system:
+	- components often depend on one another
+	- want to manage dependencies and easily substitute components
+	- want the system to be extensible
+
+Section 1: Dependency Injection and Inversion of Control
+
+Section 2:
+Section 3:
+Section 4:
+Section 5:
+Section 6:
+Section 7:
+Section 8:
