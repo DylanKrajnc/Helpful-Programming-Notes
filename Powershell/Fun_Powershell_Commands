@@ -1,0 +1,8 @@
+- Beep Symphony:
+1..5 | ForEach-Object { [console]::beep((Get-Random -Minimum 200 -Maximum 2000), 200) }
+
+- Matrix: 
+while ($true) { 
+    Write-Host ((Get-Random -Minimum 0 -Maximum 9)) -NoNewline -ForegroundColor Green 
+    Start-Sleep -Milliseconds 50 
+}
