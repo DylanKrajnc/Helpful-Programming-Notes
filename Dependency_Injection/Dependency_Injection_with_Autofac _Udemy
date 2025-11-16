@@ -6,13 +6,57 @@ The following file is a list of notes taken from following the course `Dependenc
 Section 0: Introduction
 
 - In an Object Oriented system:
-	- components often depend on one another
-	- want to manage dependencies and easily substitute components
-	- want the system to be extensible
+	- Components often depend on one another
+	- Want to manage dependencies and easily substitute components
+	- Want the system to be extensible
 
 Section 1: Dependency Injection and Inversion of Control
 
-Section 2:
+- Car car = new Car(new Engine());
+  car.Go(); // uses engine
+
+- Car depends on Engine
+	-> engine is a dependency
+
+- Manually supplying Engine to Car is not great
+	- You have to do it correctly in every place you create a car
+	- Engine might have it's own dependency
+	- A component might have a large number of dependencies
+
+- Dependency Injection
+	- No need to make use of the 'new' Keyword
+	- Deep dependency trees are resolved
+
+	- How does it work?
+		- Still put all dependencies as a constructor arguments (Constructor injection)
+		- Configure a container to satisfy dependencies in a particular way
+		- Use container to initialize a component, including all of it's dependencies
+
+	- Advantages:
+		- Less boilerplate code
+		- One central place where everything is configured
+		- Can externalize configuration
+		- Allows for simple lifetime control
+
+	- Disadvantages:
+		- Creates an expectation that configuration is done by construction code.
+		- Behaviour separated from constructor makes code a bit difficult to read/follow
+		- Requires up-front development effort
+		- Can cause an explosion of types (especially interfaces)
+
+- Inversion of Control (IoC):
+	- Inverts the control flow of a program
+	  	-> For example:
+	  		- Ordinary control: myList.Add(42); // container -> operation -> object
+	  		- Inverted control: 42.AddTo(myList); // object -> operation -> container
+
+	- DI implements IoC:
+		- Instead of using ordinary object composition
+			-> you delegate that to the IoC container
+				-> telling the container how you want the object to be built
+
+Section 2: Registration Concepts
+
 Section 3:
 Section 4:
 Section 5:
