@@ -80,12 +80,13 @@ Lecture 10:
 	- Allows for data to be moved between them. Gives you the sensitivity of keeping sensitive data on your own network, while keeping the flexibility and scalability of public cloud infrastructure for certain workloads.
 
 - Comparison:
-	-/-					| Public Cloud 							| Private Cloud 								| Hybrid Cloud
-	Cost 				|	OpEx											| CapEx													| Blend
-	Ownership		|	Azure 										| You 													| Both
-	Access 			| General public 						| Restricted										| Combination
-	Scalability | Massive/elastic 					| Limited 											| Flexible
-	Core Value 	| Speed, Cost, Efficiency 	| Control, Security, Compliance | Flexibility and Control
+	-/-					| Public Cloud 				| Private Cloud 					| Hybrid Cloud
+	-------------------------------------------------------------------------------------------------------------
+	Cost 				| OpEx						| CapEx								| Blend
+	Ownership			| Azure 					| You 								| Both
+	Access 				| General public 			| Restricted						| Combination
+	Scalability 		| Massive/elastic 			| Limited 							| Flexible
+	Core Value 			| Speed, Cost, Efficiency 	| Control, Security, Compliance 	| Flexibility and Control
 
 ---
 
