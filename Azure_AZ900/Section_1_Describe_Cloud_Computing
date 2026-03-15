@@ -1,0 +1,153 @@
+Section 1: AZ-900 - Describe Cloud Computing
+- Describe cloud concepts (25–30%)
+
+---
+
+Lecture 9:
+- Shared Resposibility Model
+
+- On Premises Responsibility: (All your responsibility) 
+		- Building security
+		- Physical network security
+		- Physical computer security
+		- Operating system patches
+		- Network and firewall settings
+		- Application settings
+		- Authentication platform
+		- User accounts
+		- Devices
+		- Data
+
+- Cloud Virtual Machine Responsibility: (IaaS)
+	- Building security (MS/Azure)
+	- Physical network security (MS/Azure)
+	- Physical computer security (MS/Azure)
+	- Operating system patches (Client)
+	- Network and firewall settings (Client)
+	- Application settings (Client)
+	- Authentication platform (Client)
+	- User accounts (Client)
+	- Devices (Client)
+	- Data (Client)
+
+- Cloud App Service Resposibility: (PaaS)
+	- Building security (MS/Azure)
+	- Physical network security (MS/Azure)
+	- Physical computer security (MS/Azure)
+	- Operating system patches (MS/Azure)
+	- Network and firewall settings (Shared/Mixed)
+	- Application settings (Shared/Mixed)
+	- Authentication platform (Shared/Mixed)
+	- User accounts (Client)
+	- Devices (Client)
+	- Data (Client)
+
+- Cloud App Service Resposibility: (Saas) (Azure is providing you an app - e.g. A SQL Database App)
+	- Building security (MS/Azure)
+	- Physical network security (MS/Azure)
+	- Physical computer security (MS/Azure)
+	- Operating system patches (MS/Azure)
+	- Network and firewall settings (MS/Azure)
+	- Application settings (MS/Azure)
+	- Authentication platform (Shared/Mixed)
+	- User accounts (Client)
+	- Devices (Client)
+	- Data (Client)
+
+---
+
+Lecture 10:
+- Public/Private/Hybrid Cloud
+
+- Public Cloud:
+	- The public cloud is defined as computing services offered by third-party providers over the public internet, making them available to anyone who wants to use or purchase them.
+
+	- Azure owns the hardware, on their network and infrastructure.
+
+	- Pay-as-you-go model - means that the cost is considered an operational expenditure (OpEx).
+
+- Private Cloud:
+	- The private cloud is defined as computing services offered either over the Internet or a private internal network and only to select users instead of the general public.
+		- Looks and acts like a cloud, except customer owns or leases or has exclusive access to the hardware.
+
+	- Whether owned by your company or a third-party, if it isn't shared with anyone else it is considered a private cloud. Involves up-front investment, which in this case would be considered capital expenditure (CapEx). 
+	- e.g. Azure Government Cloud.
+	- Azure Local (formerly known as Azure Stack HCI)
+		- Azure Arc allows you to manage your own private local servers using the same single control frame you would use for the public cloud.
+
+- Hybrid Cloud:
+	- The hybrid cloud is a computing environment that combines a private cloud with a public cloud.
+	- Allows for data to be moved between them. Gives you the sensitivity of keeping sensitive data on your own network, while keeping the flexibility and scalability of public cloud infrastructure for certain workloads.
+
+- Comparison:
+	-/-					| Public Cloud 							| Private Cloud 								| Hybrid Cloud
+	Cost 				|	OpEx											| CapEx													| Blend
+	Ownership		|	Azure 										| You 													| Both
+	Access 			| General public 						| Restricted										| Combination
+	Scalability | Massive/elastic 					| Limited 											| Flexible
+	Core Value 	| Speed, Cost, Efficiency 	| Control, Security, Compliance | Flexibility and Control
+
+---
+
+Lecture 11:
+- Cloud Pricing
+
+- Depends on how you use the services, and that flexibility can make the monthly bill more difficult to predict.
+	- Can be considered a downside of cloud computing
+	- Difficult to understand in advance what a service will really cost.
+	- Possibility for big savings but you lose predictability.
+
+- Factors affecting vm pricing:
+	- Geographic location
+	- Operating system SKU/License (If you have the azure hybrid benefit, which allows you to re-use existing licenses to reduce the cost)
+	- Instance size
+	- Disk type/size
+	- Bandwidth
+	- Backup storage
+	- Reservation/Savings plan
+	- Support agreement
+
+- Factors affecting Cosmos DB pricing:
+	- API choice
+	- Region/Regions
+	- Standard model/Serverless
+	- Number of operations per second
+	- Consumed storage
+	- Optional dedicated gateway
+	- Backup storage
+
+- To help manage this, MS offers over 55+ services for free(+/-)
+	- Some paid services have free tiers
+	- Some have limits
+
+- Azure pricing categories:
+	- Pay for time (Compute Time)
+		- Some services charge by time used
+		- Stop using the service to stop the charges
+		- i.e. VM Instances
+	- Pay for GB (for Storage)
+		- Usually you pay for any data storage used
+		- Fairly cheap - $0.02 per GB per month
+		- Also pay for network traffic to/from other regions, or to the internet (Inbound traffic free, Outbound traffic charged (first few GB are usually free))
+	- Pay for Operations (per Action)
+		- Operations are read, write, list, delete
+		- Pay per message, pay per query to a db, etc...
+		- Usually very cheap per operation
+
+---
+
+Lecture 12:
+- Azure Pricing Calculator
+	- Region of VM can effect pricing, as well as instance type, number of VMs, hours of usage, etc...
+		- Managed disks (Disk size, additional external disks, disk type)
+		- Bandwidth (Data transfer type, Region, Routed Via)
+		- Support Options
+	- Savings plans and Reservations give discounts on monthly payments
+	- Can share a link of your calculations, as well as export to PDF, etc...
+	- Just gives an estimate, difficult to know exact ingress and egress of data you will be using.
+
+- Total cost of ownership calculator (Deprecated)
+	- Used to include costs involved with owning your own servers
+		- Labour, electricity, cooling, etc...
+
+---

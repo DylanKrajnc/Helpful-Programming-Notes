@@ -1,0 +1,27 @@
+Section 0: AZ-900 Course
+
+---
+
+- What is the certification about?
+	- Tests foundational knowledge of cloud services and how those serives are provided with Microsoft Azure
+
+- Three main concepts:
+	- Describe cloud concepts
+	- Describe Azure architecture and services
+	- Describe Azure management and governance
+
+- All virtual machines are required to be part of a private network
+	-> Virtual - simulating a real thing in the cloud
+
+- Some notes on virtual machines:
+	- Can automate virtual machine launching via scripts
+		-> Don't need to go through web UI
+	- Can connect to the virtual machine remotely
+	- Charges stop when you stop the service
+	- Easier to upgrade the size of the machine that it is to create a new one
+		-> Size - number of processors, ram, etc...
+		-> All installed software remains
+
+- AZ-900 is a lifetime exam
+
+---
